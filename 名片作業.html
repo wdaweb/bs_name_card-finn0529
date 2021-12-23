@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <style>
+      *{
+        /* border: 1px solid #000; */
+      }
+      body,html{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+      .box{
+        
+        height: 500px;
+      }
+      .insidebox{
+        height: 40%;
+        margin: auto;
+      }
+      .rightTop{
+        display: none;
+      }
+      .leftBottom{
+        display: none;
+      }
+
+      @media (min-width: 768px){
+        .rightTop{
+          display: block;
+        right: -5%;
+        top: -10%;
+        width: 200px;
+      }
+      .leftBottom{
+        display: block;
+        left: -5%;
+        bottom: -10%;
+        width: 200px;
+      }
+      }
+    </style>
+</head>
+<body>
+  <div class="container position-relative">
+    <img src="./homework/三角.png" alt="" class="position-absolute rightTop">
+    <img src="./homework/三角2.png" alt="" class="position-absolute leftBottom">
+    <div class="row  align-items-center justify-content-center shadow-lg">
+      <div class="col-md-4 g-0 ">
+        <div class="box bg-secondary d-flex align-items-center justify-content-center">
+          <img src="./homework/finnn.png" alt="" class="w-75 finn">
+        </div>
+      </div>
+      <div class="col-md-8 g-0">
+        <div class="box bg-white border">
+          <div class="col-9 insidebox my-5">
+            <p>黃埏椿</p>
+            <h1 class="display-2">Yan-Chun Huang</h1>
+            <h4>Finn</h4>
+          </div>
+          <div class="col-9 insidebox my-5">
+            <p>
+              住址:新北市新莊區XXXXXXXXX</p>
+            <p>電話:0912-123-465</p>
+            <p>E-Mail:Finnnnnn@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>
